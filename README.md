@@ -1,7 +1,5 @@
 # alyxcial
 
-> below the OS — where the abstractions leak.
-
 Low-level systems & security engineering across Linux and Windows.
 Kernels, drivers, hypervisors, and the firmware nobody reads.
 
