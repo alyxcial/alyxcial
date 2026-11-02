@@ -1,31 +1,33 @@
-<h3 align="center">alyxcial</h3>
+ ## alyxcial
 
-<p align="center"><sub>below the OS · where the abstractions leak</sub></p>
+  Low-level systems and security engineering. Mostly virtualization, firmware,
+and the parts of an operating system that are easier to read in a disassembler
+than in documentation.
 
-<br/>
+### What I work on
 
-<p align="center"><sub>low-level systems &amp; security engineering<br/>linux / windows · ring 0 and below</sub></p>
+**Virtualization internals.** QEMU/KVM device models, VFIO quirks, OVMF/EDK2,
+and the SMBIOS and ACPI tables a guest actually reads. The firmware identity a
+virtual machine reports is generated from bytes measured on real hardware
+rather than copied by hand.
 
-<br/>
+**Kernel.** Custom Linux trees, KVM on AMD (SVM), scheduling and timing paths.
 
-<p align="center"><b>kernel</b><br/><sub>custom linux trees · kvm / x86 internals · scheduler &amp; timing paths</sub></p>
+**Windows internals.** Kernel-mode drivers (WDM/WDF), the display stack, and
+offline registry and hive work.
 
-<p align="center"><b>windows internals</b><br/><sub>kernel-mode drivers (wdm / wdf) · ring-0 · nt internals</sub></p>
+**Reverse engineering.** Binaries and firmware, recovering undocumented
+interfaces when there is no datasheet to read.
 
-<p align="center"><b>virtualization</b><br/><sub>qemu/kvm device models · ovmf / uefi · smbios &amp; acpi table surgery</sub></p>
+Most of it is declared in NixOS, so a host, a guest and the firmware between
+them can be rebuilt from source and diffed.
 
-<p align="center"><b>reverse engineering</b><br/><sub>binaries · firmware · undocumented interfaces · protocol recovery</sub></p>
+### Tools
 
-<br/>
+C · C++ · x86-64 assembly · Go · Python
+Linux · NixOS · QEMU · radare2 · Ghidra
 
-<p align="center"><sub><code>C</code> · <code>C++</code> · <code>x86-64 asm</code> · <code>Go</code><br/><code>NixOS</code> · <code>Linux</code> · <code>QEMU</code> · <code>Ghidra</code></sub></p>
+### How I work
 
-<br/>
-
-<p align="center"><sub><i>everything is undefined behavior eventually.</i></sub></p>
-
-<p align="center"><sub><i>it worked on bare metal. it was never bare metal.</i></sub></p>
-
-<br/>
-
-<p align="center"><sub>reads datasheets at 3am · trusts nothing it didn't disassemble</sub></p>
+Measured, not assumed. A fix is not finished until I have broken it on
+purpose and watched the test catch it.
