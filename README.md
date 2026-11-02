@@ -1,9 +1,6 @@
 <img src="assets/banner.svg" alt="An x86-64 routine decoding the name memory.wtf" width="100%">
 
-<details>
-<summary>Disassembly</summary>
-
-```nasm
+```text
 ; ======= S U B R O U T I N E ========
 ; Attributes: bp-based frame
 ;
@@ -116,7 +113,5 @@ blob:
         dq 0x9366EC5C6E16E31C
 BLOB_LEN equ $-blob
 ```
-
-</details>
 
 <!-- seed: the byte a debugger writes over your instruction -->
