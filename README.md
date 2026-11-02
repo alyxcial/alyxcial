@@ -1,4 +1,4 @@
-<img src="assets/banner.svg" alt="An x86-64 routine decoding the name memory.wtf" width="100%">
+## alyxcial
 
 ```text
 ; ======= S U B R O U T I N E ========
