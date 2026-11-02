@@ -16,9 +16,9 @@
 ; all of it in Nix.
 ;
 ; ======== R E G I S T E R S =========
-; RIP e9e5cb56fe06fe27 ; alyxcial
+; RIP 987dca0c38a90fd8 ; alyxcial
 ; RAX 0000000000000005 ; public repos
-; RCX 0000000000000012 ; 2026 commits
+; RCX 0000000000000013 ; 2026 commits
 ; RDX 0000000020261102 ; last commit
 
 section .text
